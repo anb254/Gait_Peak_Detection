@@ -1,2 +1,4 @@
-# Gait_Peak_Detection
+These codes can be used to derive gait metrics from linear trunk accelerations. First, use anterior-posterior trunk accelerations as the input to 'Peak_Detection.m'. This file captures pendular movement of gait to get an approximatation of heel strikes. Use the output of this process to then run the 'Modified_Peak_Detection_Gait_Accelerometry_Measures.m' file. The approximate heel strike locations are used to identify trunk acceleration peaks to capture a more accurate representation of heel strikes. The acceleration vector is then rotated to be in line with gravity before deriving select gait metrics. This file calls on the 'StrideHarmRatio.m' file to derive harmonic ratio (a metric of gait symmetry). 
+
+This process uses a modified peak detection method based on work by Zijlstra W and Hof AL. (Zijlstra W, Hof AL. Assessment of spatio-temporal gait parameters from trunk accelerations during human walking. Gait Posture. 2003;18(2):1-10.)
  
